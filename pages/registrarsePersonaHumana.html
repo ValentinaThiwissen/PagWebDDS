@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse | Viandas Solidarias</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body class="bodyRegistrarse">
+        <header class="header">
+            <nav>
+                <a href="../index.html">
+                          <img src="../assets/img/logo.png" alt="Logo de Viandas solidarias" loading="lazy" width="100">
+                </a> 
+            </nav>
+        </header>
+        <main>
+            <section class="seccionRegistrarse">
+                <h2>Registro persona humana</h2>
+                <h3>Ingrese sus datos</h3>
+                <form action="" method="get" id="form-registro" class="formulario">
+                    <div>
+                        <input type="text" name="nombre" id ="nombre" placeholder="Nombre" required> 
+                    </div>
+                    <div>
+                        <input type="text" name="apellido" id ="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <input type="text" name="direccion" id ="direcion" placeholder="Direccion">
+                    </div>
+
+                    <div>
+                        <input type="text" name="mail" id="mail" placeholder="ejemplo@mail.com">
+                    </div>
+                    
+                    <div>
+                        <input type="date" name="nacimiento" id="nacimiento">
+                    </div>
+                    <div>
+                        <select id="MedioContacto" required>
+                            <option value="0" >Whatsapp</option>
+                            <option value="1">Telefono</option>
+                            <option value="2">Telegram</option>
+                            <option value="3">Mail</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <input type="text" name="contacto" id="contacto" placeholder="Contacto" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>Forma de colaborar:</label>
+                            <fieldset>
+                                <legend>Selecciona al menos una opción:</legend>
+                                <label>
+                                    <input type="checkbox" name="formaColaborar" value="0">
+                                    Donación Monetaria
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="formaColaborar" value="1">
+                                    Distribución Vianda
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="formaColaborar" value="2">
+                                    Donación Vianda
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="checkbox" name="formaColaborar" value="3">
+                                    Registrar Persona
+                                </label>
+                            </fieldset>
+                        </div>
+                    
+                    </div>
+                    <div>
+                        <input type="text" name="usuario" id ="usuario" placeholder="Nombre de usuario"required>
+                    </div>
+                    <div>
+                        <input type="text" name="password" id="password" placeholder="Contraseña" required>
+                    </div>
+
+                    <div class="terminos">
+                        <input class="check" type="checkbox" id="terminos">
+                        <label class="textoCheck" for="terminos">Acepta términos y condiciones</label>
+                    </div>
+
+                    <button type="submit">Registrarse</button>
+                    <div>
+                        <a class="ayuda" href="./inicio_sesion.html">Ya sos colaborador?</a>
+                    </div>              
+                 </form>
+                 
+            </section>
+
+        </main>
+        
+        <footer class="footer">
+            <nav>
+                <ul>
+                    <li><a href="">Términos y condiciones</a></li>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#main">
+                <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+            </a>
+        </footer>
+    </body>
+</html>

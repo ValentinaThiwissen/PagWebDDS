@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viandas Solidarias| Donaciones</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-oNHi9Pj0oDTXVpeOSV0I2fGkkr6NHG8a4d6t6wXBl4g=" crossorigin="" />
+    -->
+    
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">
+                <img src="assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+
+            <ul>
+                <li>
+                    <a href="#quienesSomos">Quiénes somos</a>
+                </li>
+
+                <li>
+                    <a href="#quieroAyudar">Quiero ayudar</a>
+                </li>
+
+
+                <li>
+                    <a href="./pages/inicio_sesion.html">Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="./pages/personaJuridica.html">Persona Juridica</a>
+                </li>
+                <li>
+                    <a href="./pages/personaHumana.html">Persona Humana</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main id="main" class="main">
+              
+        <div class="carrousel">
+            <div class="grande">
+                <img src="assets/img/imgCarrousel1.jpg" alt="Descripción de la imagen 1">
+                <img src="assets/img/imgCarrousel2.jpg" alt="Descripción de la imagen 2">
+                <img src="assets/img/imgCarrousel3.jpg" alt="Descripción de la imagen 3">
+                <img src="assets/img/imgCarrousel4.jpg" alt="Descripción de la imagen 4">
+                <img src="assets/img/imgCarrousel5.jpg" alt="Descripción de la imagen 5">
+                <img src="assets/img/imgCarrousel6.jpg" alt="Descripción de la imagen 6">
+            </div>
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+
+        <section class="quienesSomos" id="quienesSomos" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="descripcionQuienesSomos">
+                <h1>¿Quiénes Somos?</h1>
+                <p>Formamos una iniciativa nacional que busca contribuir a la mejora de la vulnerabilidad alimentaria, a través
+                   de una red de heladeras solidarias y otro tipo de donaciones, comprometidos a proporcionar un acceso equitativo y digno.</p>
+                <p>Al unir fuerzas, estamos construyendo puentes entre personas y comunidades, fortaleciendo la
+                   resiliencia y promoviendo la igualdad de oportunidades para todos. Invitamos a todos a unirse a
+                   nuestro movimiento solidario y a ayudarnos a construir un futuro donde el acceso digno a los
+                   alimentos sea una realidad para cada persona, sin importar su situación.</p>
+
+                <a class="botonRegistrarse" href="#quieroAyudar">Quiero sumarme</a>
+            </div>
+            <div class="imagenQS">
+                <img src="./assets/img/posibleFondo2.png" alt="">
+            </div>
+        </section>
+
+        <!--
+            <section class="quienesSomos" id="quienesSomos" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="descripcionQuienesSomos">
+                <h1>¿Quiénes Somos?</h1>
+                <p>Bienvenidos a nuestra iniciativa nacional que busca transformar la forma en que las comunidades
+                    enfrentan la vulnerabilidad alimentaria. En toda nuestra red de heladeras solidarias, estamos
+                    comprometidos a proporcionar acceso equitativo y digno.</p>
+                <p>Ubicadas estratégicamente en diferentes localidades a lo largo y ancho del país, estas heladeras no
+                    solo ofrecen alimentos básicos, sino también la esperanza de un mañana más próspero y justo.</p>
+                <p>Al unir fuerzas, estamos construyendo puentes entre personas y comunidades, fortaleciendo la
+                    resiliencia y promoviendo la igualdad de oportunidades para todos. Invitamos a todos a unirse a
+                    nuestro movimiento solidario y a ayudarnos a construir un futuro donde el acceso digno a los
+                    alimentos sea una realidad para cada persona, sin importar su situación.</p>
+                <a class="botonRegistrarse" href="#quieroAyudar">Quiero sumarme</a>
+            </div>
+
+        </section>
+        -->
+        
+
+        <hr>
+        <section class="quieroAyudar" id="quieroAyudar" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="eleccionContribuyente">
+                <h2>¿Qué tipo de contribuyente serás?</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="botonRegistrarse button"
+                                href="pages/registrarsePersonaJuridica.html">Organizacion Jurídica</a>
+                        </li>
+                        <li>
+                            <a class="botonRegistrarse button" href="pages/registrarsePersonaHumana.html">Voluntariado</a>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
+            
+            <div class="imagenContribuyente">
+                <img src="assets/img/imgContribuyente.png" alt="Imagen" class="imagenCentrada">
+            </div>
+        </section>
+        
+        <section class="mapaHeladeras">
+            <h2>¿Dónde encontrar nuestras heladeras?</h2>
+            <div id="map">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+    <!--Vincular con  Leaflet 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>-->
+
+     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/mapa.js"></script>
+       
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <script src="./js/carrousel.js"></script>
+</body>
+</html>

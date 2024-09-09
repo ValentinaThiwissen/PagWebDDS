@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPerfil | Vianda para todos</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="bodyInterno centrado">
+
+    <!-- HEADER -->
+    <header class = "header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li><a href="crearReporte.html">Reportes</a></li>
+                <li><a href="puntos.html">Puntos</a></li>
+                <li><a href="alertasHeladera.html">Alertas</a></li>
+                <li><a href="cargaMasiva.html">CargaCSV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class ="mi-perfil">
+        <h1>Perfil</h1>
+        
+        <div class="sostenedor_de_campos">
+            <div class="campo" data-campo="nombre">
+                <label for="nombre">Nombre:</label>
+                <div class="campo-editable">
+                    <span class="input-text">Ejemplo Nombre</span>
+                    <button class="edit-button lapiz"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="save-button boton guardar">Guardar</button>
+                </div>
+            </div>
+
+            <div class="campo" data-campo="email">
+                <label for="email">Email:</label>
+                <div class="campo-editable">
+                    <span class="input-text">ejemplo@email.com</span>
+                    <button class="edit-button lapiz"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="save-button boton guardar">Guardar</button>
+                </div>
+            </div>
+
+            <div class="campo" data-campo="telefono">
+                <label for="telefono">WhatsApp:</label>
+                <div class="campo-editable">
+                    <span class="input-text">123-456-7890</span>
+                    <button class="edit-button lapiz"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="save-button boton guardar">Guardar</button>
+                </div>
+            </div>
+
+            <div class="campo" data-campo="telegram">
+                <label for="telegram">Telegram:</label>
+                <div class="campo-editable">
+                    <span class="input-text">123-456-7890</span>
+                    <button class="edit-button lapiz"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="save-button boton guardar">Guardar</button>
+                </div>
+            </div>
+
+            <div class="campo" data-campo="medio">
+                <label for="Medio">Barrio:</label>
+                <div class="campo-editable">
+                    <select class="input-select">
+                        <option value="Localidad1">Caballito</option>
+                        <option value="Localidad2">Recoleta</option>
+                        <option value="Localidad3">Nuñez</option>
+                        <option value="Localidad1">Belgrano</option>
+                        <option value="Localidad2">La Boca</option>
+                        <option value="Localidad3">Almagro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="campo" data-campo="localidad1">
+                <label for="localidad1">Medio de Contacto:</label>
+                <div class="campo-editable">
+                    <select class="input-select">
+                        <option value="medio3">Whatsapp</option>
+                        <option value="medio2">Telegram</option>
+                        <option value="medio1">Mail</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+
+        </section>
+
+       
+    </main>
+
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="editarPerfil.js"></script>
+</body>
+
+</html>

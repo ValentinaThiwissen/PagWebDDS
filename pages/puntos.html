@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Viandas Solidarias | Vianda para todos</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+
+    </head>
+    <body class="body Interno centrado">
+        <header class="header">
+            <nav>
+                <a href="../index.html">
+                    <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+                </a>
+                <ul>
+                    <li>
+                        <li><a href="crearReporte.html">Reportes</a></li>
+                        <li><a href="puntos.html">Puntos</a></li>
+                        <li><a href="alertasHeladera.html">Alertas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="puntos-totales">
+                <h2>Puntos Totales</h2>
+                <div class="cuadro-puntos">
+                    <span id="totalPuntos">1234</span> 
+                    <!--- la forma de calcular los puntos -->>
+                </div>
+            </section>
+
+            <div class="wrap">
+                <h1>Escoge un producto</h1>
+                <div class="store-wrapper">
+                    <div class="categorias">
+                            <a href="#" class="categoria_item" ct_item-active" data-categoria="all">Todo</a>
+                            <a href="#" class="categoria_item" data-categoria="tecnologia">Tecnologia</a>
+                            <a href="#" class="categoria_item" data-categoria="gastronomia">Gastronomia</a>
+                            <a href="#" class="categoria_item" data-categoria="bazar">Bazar</a>
+                            <a href="#" class="categoria_item" data-categoria="libreria">Libreria</a>
+                            <a href="#" class="categoria_item" data-categoria="otros">Otros</a>
+                    </div>
+                        <!--<select id="rubroSelect">
+                            <option value="todos">Tecnologia</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="alimentacion">Gastronomia</option>
+                            <option value="ropa">Bazar</option>
+                            <option value="librerias">Libreria</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        -->
+                    <section class="listaProductos">
+                        <div class="producto-item active" data-categoria="libreria">
+                            <img src="../assets/img/productos1.jpg" alt="Descripción de la imagen 1">
+                            <a href="#">Microfibras</a>
+                                <!-- <p>Puntos Necesarios: <span class="puntos-necesarios">100</span></p>
+                                <button class="boton-canjear">Canjear</button>
+                            -->
+                        </div>
+                        <div class="producto-item active" data-categoria="libreria">
+                            <img src="../assets/img/productos2.jpg" alt="Descripción de la imagen 2">
+                            <a href="#">Cuadernos de tapa dura</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+                        <div class="producto-item active" data-categoria="libreria">
+                            <img src="../assets/img/productos3.jpg" alt="Descripción de la imagen 3">
+                            <a href="#">Carpetas personalizadas</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+                        <div class="producto-item active" data-categoria="libreria">
+                            <img src="../assets/img/productos4.jpg" alt="Descripción de la imagen 4">
+                            <a href="#">Birome</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="tecnologia">
+                            <img src="../assets/img/productos5.jpg" alt="Descripción de la imagen 1">
+                            <a href="#">Laptop Hp</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">100</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                         </div>
+                        <div class="producto-item active" data-categoria="tecnologia">
+                           <img src="../assets/img/productos6.jpg" alt="Descripción de la imagen 2">
+                            <a href="#">Gabinete </a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                         </div>
+                        <div class="producto-item active" data-categoria="tecnologia">
+                          <img src="../assets/img/productos7.jpg" alt="Descripción de la imagen 3">
+                            <a href="#">Camara</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+                        <div class="producto-item active" data-categoria="tecnologia">
+                           <img src="../assets/img/productos8.jpg" alt="Descripción de la imagen 4">
+                            <a href="#">Auriculares </a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="gastronomia">
+                            <img src="../assets/img/productos9.jpg" alt="Descripción de la imagen 1">
+                            <a href="#">Cena con Sushi</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">100</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="gastronomia">
+                            <img src="../assets/img/productos10.jpg" alt="Descripción de la imagen 2">
+                            <a href="#">Brunch para 2 personas</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="gastronomia">
+                            <img src="../assets/img/productos11.jpg" alt="Descripción de la imagen 3">
+                            <a href="#">Cena del MedioOriente para 2</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="gastronomia">
+                            <img src="../assets/img/productos12.jpg" alt="Descripción de la imagen 4">
+                            <a href="#">Almuerzo italiano para 2</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>                            
+                        
+                        <div class="producto-item active" data-categoria="bazar">
+                            <img src="../assets/img/productos13.jpg" alt="Descripción de la imagen 1">
+                            <a href="#"></a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">100</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="bazar">
+                            <img src="../assets/img/productos14.jpg" alt="Descripción de la imagen 2">
+                            <a href="#">Set de tazas personalizadas</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="bazar">
+                            <img src="../assets/img/productos15.jpg" alt="Descripción de la imagen 3">
+                            <a href="#">Vajilla con puntitos</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+
+                        <div class="producto-item active" data-categoria="bazar">
+                            <img src="../assets/img/productos16.jpg" alt="Descripción de la imagen 4">
+                            <a href="#">Set de platos vintage</a>
+                                <!--<p>Puntos Necesarios: <span class="puntos-necesarios">150</span></p>
+                                <button class="boton-canjear">Canjear</button>-->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <nav>
+                <ul>
+                    <li><a href="">Términos y condiciones</a></li>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Contacto</a></li>
+                    
+                </ul>
+            </nav>
+            <a href="#main">
+                <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+            </a>
+        </footer>
+        <script src="../js/puntos.js"></script>
+    </body>
+    
+    </html>

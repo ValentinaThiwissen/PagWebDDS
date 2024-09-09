@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Reportes | Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                    <li><a href="crearReporte.html">Reportes</a></li>
+                    <li><a href="puntos.html">Puntos</a></li>
+                    <li><a href="alertasHeladera.html">Alertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+
+        <section class="nuevo-reporte">
+            <form>
+                <h3>Nuevo incidente</h3>
+                <img src="../assets/img/fallatecnica2.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+                <!---required para que sea obigatorio-->>
+                <input type="text" id="heladera" placeholder="Heladera en que ocurrió" required>
+                <input type="text" id="colaborador" placeholder="Colaborador que reportó" required>
+                <input type="file" id="foto" name="foto" accept="image/*">
+                <textarea id="observaciones" placeholder="Observaciones"></textarea>
+
+                <button type="submit">Reportar</button>
+            </form>
+           
+            <!---required para que sea obigatorio-->>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+</body>
+
+</html>

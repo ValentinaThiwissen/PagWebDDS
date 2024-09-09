@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viandas Solidarias| Donaciones</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+
+            <ul>
+                <li>
+                    <li><a href="crearReporte.html">Reportes</a></li>
+                    <li><a href="puntos.html">Puntos</a></li>
+                    <li><a href="alertasHeladera.html">Alertas</a></li>
+                    <li><a href="miPerfil.html">MiPerfil</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+        <section class="personaHumana" id="personaHumana" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="personaHumana">
+                <h1>Bienvenido voluntario!</h1>
+                <h2>Selecciona cómo prefieres colaborar hoy:<h2>
+            </div>
+
+            <div class="colaboraciones">
+                <div class="colaboracion" data-form="donacionMonetaria">
+                    <div class="overlay">Donar dinero</div>
+                    <img src="../assets/img/colaborarDinero.jpg" alt="Donar dinero">
+                </div>
+                <div class="colaboracion" data-form="distribucionVianda">
+                    <div class="overlay">Distribuir viandas</div>
+                    <img src="../assets/img/colaborarDistV.jpg" alt="Distribuir viandas">
+                </div>
+                <div class="colaboracion" data-form="donacionVianda">
+                    <div class="overlay">Donar viandas</div>
+                    <img src="../assets/img/colaborarDonarV.jpg" alt="Donar viandas">
+                </div>
+                <div class="colaboracion" data-form="registroPersonaVulnerable">
+                    <div class="overlay">Registrar personas vulnerables</div>
+                    <img src="../assets/img/colaborarRPV.jpg" alt="Registrar personas vulnerables">
+                </div>
+            </div>
+
+            <div id="dynamicFormContainer" class="dynamic-form">
+                <!-- El nuevo formulario se añadirá aquí -->
+            </div>  
+        </section>
+
+        <section class="actividades">
+                    <section class="actividadesDisponibles">
+                            <div class="item">
+                                <img src="../assets/img/reportarFalla.png" alt="">
+                                <h3>Reportar falla técnica</h3>
+                                <button onclick="window.location.href='crearReporte.html'">Reporta</button>
+
+                            </div>
+                            
+                            <div class="item">
+                                <img src="../assets/img/suscripcionHeladera.png" alt="">
+                                <h3>Suscripción a heladeras</h3>
+                                <button onclick="window.location.href='suscripcion.html'">Suscribite</button>
+                            </div>
+
+                            <div class="item">
+                                <img src="../assets/img/cambioPuntos.png" alt="">
+                                <h3>Canjea tus puntos</h3>
+                                <button onclick="window.location.href='puntos.html'">Canjea</button>
+                            </div>
+
+                            <div class="item">
+                                <img src="../assets/img/solicitudApertura.png" alt="">
+                                <h3>Solictud apertura heladera</h3>
+                                <button onclick="window.location.href='registroApertura.html'">Solicita!</button>
+                            </div> 
+        </section>
+    </section>
+        
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+    <script src="../js/formularioColaborarHuaman.js"></script>
+</body>
+</html>

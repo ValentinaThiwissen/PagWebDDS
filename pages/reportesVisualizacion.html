@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Reportes Heladera| Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                <li><a href="crearReporte.html">Reportar</a></li>
+                
+                <li><a href="puntos.html">Puntos</a></li>
+                <li><a href="alertasHeladera.html">Alertas</a></li>
+                <li><a href="miPerfil.html">MiPerfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--- la fecha y hora la tengo porque -->>
+    <main>
+
+        <section class="Alerta">
+
+            <h2>Listado de Reportes</h2>
+            <h3>Reporte de cantidad fallas por heladera</h3>
+            <img src="../assets/img/pdf2.jpg" alt="Exportar a PDF" id="exportarPDF"
+                style="cursor: pointer; width: 50px;">
+            <img src="../assets/img/excel2.jpg" alt="Exportar a EXCEL" id="exportarEXCEL"
+                style="cursor: pointer; width: 50px;">
+
+
+            <table id="reportesFallasTable">
+
+                <thead> <!--- Para hacer tablita esta etiquetea-->
+                    <tr>
+                        <th>Nombre Heladera</th>
+                        <th>Cantidad Fallas</th>
+                        <th>Fecha </th>
+                        <th>Hora </th>
+
+
+                    </tr>
+                    <tr>
+
+
+                        <td>Medrano</td>
+                        <td>25</td>
+                        <td>8/9/2023</td>
+                        <td>16:54</td>
+
+                    </tr>
+                    <tr>
+                        <td>Medrano</td>
+                        <td>10</td>
+                        <td>8/10/2023</td>
+                        <td>16:54</td>
+
+                    </tr>
+                    <tr>
+
+
+                        <td>Medrano</td>
+                        <td>30</td>
+                        <td>8/11/2023</td>
+                        <td>16:54</td>
+
+                    </tr>
+
+
+                </thead>
+                <!---Me lo imagino como un mapita y que tenga las alertas
+                o un listado con las alertas y la distancia de donde estas y que puedas pone run mapita-->>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <h3>Reporte de cantidad viandas retiradas por heladera</h3>
+            <img src="../assets/img/pdf2.jpg" alt="Exportar a PDF" id="exportarPDF"
+                style="cursor: pointer; width: 50px;">
+            <img src="../assets/img/excel2.jpg" alt="Exportar a EXCEL" id="exportarEXCEL"
+                style="cursor: pointer; width: 50px;">
+
+
+            <table id="reportesViandasRetiradasTable">
+
+                <thead> <!--- Para hacer tablita esta etiquetea-->
+                    <tr>
+                        <th>Nombre Heladera</th>
+                        <th>Cantidad viandas retiradas</th>
+                        <th>Fecha </th>
+                        <th>Hora </th>
+
+
+                    </tr>
+                    <tr>
+                        <td>La Natural</td>
+                        <td>5</td>
+                        <td>05/04/2024</td>
+                        <td>16:54</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>La Natural</td>
+                        <td>5</td>
+                        <td>05/04/2024</td>
+                        <td>16:54</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Medrano</td>
+                        <td>8</td>
+                        <td>07/08/2024</td>
+                        <td>12:12</td>
+
+                    </tr>
+                </thead>
+                <!---Me lo imagino como un mapita y que tenga las alertas
+                o un listado con las alertas y la distancia de donde estas y que puedas pone run mapita-->>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <h3>Reporte de cantidad viandas por colaborador</h3>
+            <table id="reportesViandasColaboradorTable">
+                <img src="../assets/img/pdf2.jpg" alt="Exportar a PDF" id="exportarPDF"
+                    style="cursor: pointer; width: 50px;">
+                <img src="../assets/img/excel2.jpg" alt="Exportar a EXCEL" id="exportarEXCEL"
+                    style="cursor: pointer; width: 50px;">
+
+
+
+                <thead> <!--- Para hacer tablita esta etiquetea-->
+                    <tr>
+                        <th>Nombre Colaborador</th>
+                        <th>Cantidad viandas </th>
+                        <th>Fecha </th>
+                        <th>Hora </th>
+
+                    </tr>
+                    <tr>
+                        <td>Nati</td>
+                        <td>5</td>
+                        <td>05/04/2024</td>
+                        <td>16:54</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Ignacio Villaruel</td>
+                        <td>4</td>
+                        <td>03/08/2024</td>
+                        <td>14:41</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>Camila</td>
+                        <td>10</td>
+                        <td>08/08/2023</td>
+                        <td>17:00</td>
+
+
+                    </tr>
+                </thead>
+                <!---
+                o un listado con las alertas y la distancia de donde estas y que puedas pone run mapita-->>
+                <tbody>
+
+                </tbody>
+            </table>
+            <script>
+                const alertas = [
+                    { nombre: 'Heladera Medrano', tipo: 'Temperatura Alta', distancia: '300m', fecha: '2024-08-12', hora: '15:54' },
+                    { nombre: 'Heladera de las Girls', tipo: 'Sensor Movimiento', distancia: '1500m', fecha: '2024-08-12', hora: '14:41' },
+                    { nombre: 'Heladera Nati', tipo: 'Puerta Abierta', distancia: '4000m', fecha: '2024-08-12', hora: '00:00' }
+                ];
+
+                function agregarAlertas() {
+                    const tbody = document.querySelector("#alertaTable tbody");
+                    tbody.innerHTML = '';
+
+                    alertas.forEach(alerta => {
+                        const row = document.createElement('tr');
+
+                        Object.values(alerta).forEach(value => {
+                            const cell = document.createElement('td');
+                            cell.textContent = value;
+                            row.appendChild(cell);
+                        });
+
+                        tbody.appendChild(row);
+                    });
+                }
+
+                // Renderizar listado al cargar la página
+                document.addEventListener('DOMContentLoaded', agregarAlertas);
+            </script>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+
+    </footer>
+
+</body>
+
+</html>

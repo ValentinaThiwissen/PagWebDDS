@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Mis Suscripciones| Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                    <li><a href="crearReporte.html">Reportes</a></li>
+                    <li><a href="puntos.html">Puntos</a></li>
+                    <li><a href="alertasHeladera.html">Alertas</a></li>
+                    <li><a href="miPerfil.html">MiPerfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+    <!-- Idea que para la zona la persona pueda filtrar las heladeras que quiera o le ponemos una lista x determinada-->
+    <section class="casoSuscripcionPartes">
+        <h2>Registre la organización</h2>
+        <h3>Ingrese sus datos</h3>
+        <form action="" method="get" id="form-registro" class="formulario">
+            <p>Ingresa la heladera donde va a retirar viandas</p>
+            <textarea id="heladeraOrigen" placeholder="Heladera Origen" required></textarea>
+            <p>Ingresa la heladera donde va a colocar viandas</p>
+            <textarea id="heladeraDestino" placeholder="Heladera Destino" required></textarea>
+            <p>Elija el medio de notificacion deseado</p>
+            <div>
+                <select id="MedioContacto" required>
+                    <option value="0" >Whatsapp</option>
+                    <option value="1">Telefono</option>
+                    <option value="2">Telegram</option>
+                    <option value="3">Mail</option>
+                </select>
+
+            </div>
+            <button type="submit">Enviar</button>
+
+    
+                        
+         </form>
+         
+    </section>
+           
+       
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+</body>
+
+</html>

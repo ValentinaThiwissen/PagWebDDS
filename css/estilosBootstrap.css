@@ -1,0 +1,43 @@
+/*
+Libreria: bloque de código que resuelve una problemática en particular.
+- Ejemplo: libreria de css es fontawesome, para íconos vectoriales. Creando un CSS con JS.
+- Ejemplo2: animate.style, armaun css que se adjunta al proyecto y logra animaciones.
+- Ejemplo3: También hay librerias para JS, y Java.
+- Ejemplo4: React.
+
+Framework: marco de trabajo, no resuelve una roblemática sino que resuelve toda la problemática del lenguaje en particular.
+- Ejemplo: Bootstrap, hay que respetar ciertas reglas, parametriza cosas y etiquetas, fuentes y colores.
+Le da un estilo propio a la web. Nos regala componentes ya terminados, como una barra de anvegacion y un carrousel.
+Nos da el HTML, y el CSS.
+
+SE SUELE USAR SOLO BOOTSTRAP O SOLO CSS, PARA NO MEZCLAR
+
+ES MEJOR DESCARGAR Y NO LINKEAR
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&display=swap');
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*configuracion de variables*/
+:root {
+    --main-color: #f3f3f3;
+   /* --secondary-color: #C8D1C5;*/
+    --secondary-color: #daecf2;
+    --third-color: #96AFB8;
+    --third-color-t: #000000bc;
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+}

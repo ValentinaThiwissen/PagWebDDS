@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Mis Suscripciones| Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                <li><a href="crearReporte.html">Reportes</a></li>
+                <li><a href="colaborar.html">Colaborá</a></li>
+                <li><a href="puntos.html">Puntos</a></li>
+                <li><a href="alertasHeladera.html">Alertas</a></li>
+                <li><a href="miPerfil.html">MiPerfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Idea que para la zona la persona pueda filtrar las heladeras que quiera o le ponemos una lista x determinada-->
+        <div class="filtro-distancia">
+            <h1>Suscripciones</h1>
+            <p>Elegir heladera por distancia. Ingrese el radio de cobertura:</p>
+            <div class="selector-distancia">
+                <select id="Distancia" required>
+                    <option value="1">1 km</option>
+                    <option value="2">2 km</option>
+                    <option value="3">3 km</option>
+                    <option value="4">4 km</option>
+                </select>
+                <a class="botonFiltrar">Filtrar</a>
+            </div>
+        </div>
+        
+        <p>Listado de heladeras</p>
+        <ul>
+            <li class="itemSuscripcion" <span>Heladera 1</span>
+
+                <a class="botonSuscripcion">Suscribirse</a>
+            </li>
+            <li class="itemSuscripcion" <span>Heladera 2</span>
+
+                <a class="botonSuscripcion">Suscribirse</a>
+            </li>
+
+            <li class="itemSuscripcion" <span>Heladera 3</span>
+
+                <a class="botonSuscripcion">Suscribirse</a>
+            </li>
+
+
+
+        </ul>
+
+
+
+        <h2>SUSCRIPCIONES</h2>
+        <h3>Elegi los casos a ser notificaos</h3>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="../assets/img/caso1.png" alt="Imagen 1" class="card-image">
+                <p> 1. Será notificado, en caso de que las viandas disponibles en la healdera, sean iguales o
+                    menores al valor que usted disponga.</p>
+                <button onclick="window.location.href='caso1.html'">Suscribirse</button>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/caso2.jpg" alt="Imagen 2" class="card-image">
+                <p>2. Será notificado, en caso de que falten la cantidad que usted disponga de viandas para que la
+                    heladera esté llena y no se puedan ingresar más viandas.
+                    En ese caso, podrá llevar la cantidad deseada de viandas a una heladera más vacía</p>
+                <button onclick="window.location.href='caso2.html'">Suscribirse</button>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/caso3.jpg" alt="Imagen 3" class="card-image">
+                <p>3. Será notificado, en caso de que la heladera sufra un desperfecto y las viandas deban ser
+                    llevadas a otras heladeras para que no se echen a perder.</p>
+                <button onclick="window.location.href='caso3.html'">Suscribirse</button>
+            </div>
+        </div>
+
+
+        <!-- ESTO HABRIA QUE HACERLO EN OTRA PAGINA ME PAREE PERO POR AHORA LO DEJO ASI 
+        </section>
+        <section class="SecciondeCasosSuscripcion">
+            <section class="CasosDeSuscripcion" id="CasosDeSuscripcion" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="contenedorActividades">
+                    <div class="item">
+                        <h2>1-Caso</h2>
+                        <p> Será notificado, en caso de que las viandas disponibles en la healdera, sean iguales o
+                            menores al valor que usted disponga.</p>
+                        <button onclick="window.location.href='caso1.html'">Suscribirse al caso 1</button>
+                        <img src="../assets/img/caso1.png" alt="">
+
+
+
+                    </div>
+                    <div class="item">
+                        <h2>2-Caso</h2>
+                        <p>Será notificado, en caso de que falten la cantidad que usted disponga de viandas para que la
+                            heladera esté llena y no se puedan ingresar más viandas.
+                            En ese caso, podrá llevar la cantidad deseada de viandas a una heladera más vacía</p>
+                        <button onclick="window.location.href='caso2.html'">Suscribirse al Caso 2</button>
+                        <img onclick="window.location.href='caso1.html'">
+
+                    </div>
+                    <div class="item">
+                        <h2> 3-Caso</h2>
+                        <p>Será notificado, en caso de que la heladera sufra un desperfecto y las viandas deban ser
+                            llevadas a otras heladeras para que no se echen a perder.
+                            <button onclick="window.location.href='caso3.html'">Suscribirse al Caso 3</button>
+                            <img src="../assets/img/caso3.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </section>
+
+        <section class="quienesSomos" id="quienesSomos" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="contenedorTitulos">
+                <h1></h1>
+                <p></p>
+                <p>.</p>
+                <p>.</p>
+                <a class="botonRegistrarse" href="#quieroAyudar">Unite</a>
+            </div>
+
+        </section>-->
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <title>Mis Suscripciones| Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                <li><a href="crearReporte.html">Reportes</a></li>
+                <li><a href="puntos.html">Puntos</a></li>
+                <li><a href="alertasHeladera.html">Alertas</a></li>
+                <li><a href="miPerfil.html">MiPerfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <!-- Idea que para la zona la persona pueda filtrar las heladeras que quiera o le ponemos una lista x determinada-->
+        <section class="casoSuscripcionPartes">
+            <h2>Registre la organización</h2>
+            <form action="" method="get" id="form-registro" class="formulario">
+               
+                <h3>Sugerencias</h3>
+                <p>A continuación nuestro sistema le muestra una serie de heladeras donde puede llevar sus viandas</p>
+                <div class="sugerencias-centradas"></div>
+                <ul>
+                    <li class="itemSugerencia">
+                        <span>Heladera 3</span>
+                        <a class="botonSugerencia">Aceptar </a>
+                    </li>
+                    <li class="itemSugerencia">
+                        <span>Heladera 4</span>
+                        <a class="botonSugerencia">Aceptar </a>
+                    </li>
+                    <li class="itemSugerencia">
+                        <span>Heladera 5</span>
+                        <a class="botonSugerencia">Aceptar </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <h3>Heladeras destino</h3>
+                <!-- Sección para agregar heladeras destino y cantidad de viandas -->
+                <div class="destinos">
+                    <p>Complete los nombres de las heladeras donde va a mover sus viandas y
+                        la cantidad de viandas a mover
+                    </p>
+                    <div id="destino-container">
+                        <!-- Los elementos de destino se agregarán aquí dinámicamente -->
+                    </div>
+                    <button type="button" id="agregarDestino" class="botonSugerencia">Agregar Destino</button>
+                </div>
+                <p>Ingresa la heladera donde se va a retirar viandas</p>
+                <textarea id="heladeraOrigen" placeholder="Heladera Origen" required></textarea>
+                
+               
+            
+            </form>
+                <h3>Formas de Notificacion</h3>
+                <p>Elija el medio de notificacion deseado</p>
+                <div>
+                    <select id="MedioContacto" required>
+                        <option value="0">Whatsapp</option>
+                        <option value="1">Telefono</option>
+                        <option value="2">Telegram</option>
+                        <option value="3">Mail</option>
+                    </select>
+
+                </div>
+                <button type="submit">Enviar</button>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+    <script>
+        document.getElementById('agregarDestino').addEventListener('click', function() {
+            // Contenedor donde se agregarán los nuevos campos
+            const destinoContainer = document.getElementById('destino-container');
+            
+            // Crear un nuevo div para el destino
+            const nuevoDestino = document.createElement('div');
+            nuevoDestino.className = 'destino-item';
+            
+            // Crear el campo para la Heladera Destino
+            const destinoLabel = document.createElement('label');
+            destinoLabel.innerHTML = 'Heladera Destino:';
+            const destinoInput = document.createElement('input');
+            destinoInput.type = 'text';
+            destinoInput.name = 'heladeraDestino[]';
+            destinoInput.placeholder = 'Heladera Destino';
+            destinoInput.required = true;
+            
+            // Crear el campo para la Cantidad de Viandas
+            const cantidadLabel = document.createElement('label');
+            cantidadLabel.innerHTML = 'Cantidad de Viandas:';
+            const cantidadInput = document.createElement('input');
+            cantidadInput.type = 'number';
+            cantidadInput.name = 'cantidadViandas[]';
+            cantidadInput.min = '1';
+            cantidadInput.required = true;
+            
+            // Agregar los campos al nuevo div
+            nuevoDestino.appendChild(destinoLabel);
+            nuevoDestino.appendChild(destinoInput);
+            nuevoDestino.appendChild(cantidadLabel);
+            nuevoDestino.appendChild(cantidadInput);
+            
+            // Agregar el nuevo div al contenedor
+            destinoContainer.appendChild(nuevoDestino);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | Viandas Solidarias </title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/registroPersonaVulnerable.css">
+
+</head>
+
+<body class="body Interno centrado">
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                    <li><a href="crearReporte.html">Reportes</a></li>
+                   
+                    <li><a href="puntos.html">Puntos</a></li>
+                    <li><a href="alertasHeladera.html">Alertas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seccionRegistroPersonaVulnerable">
+            <h1>Registro de personas en situación de vulnerabilidad</h1>
+            <p>Ingrese los datos de la persona a registrar</p>
+            <form action="" method="get" id="form-registro" class="formulario">
+                <p>Ingrese nombre y apellido de la persona a registrar</p>
+                <div>
+
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+        
+                <p>Ingrese su direccion(si tiene)</p>
+                <div>
+                    <input type="text" name="direccion" id="direcion" placeholder="Direccion">
+                </div>
+                <p>Ingrese si la persona tiene menores a cargo?</p>
+                <div>
+                    <select name="Menores a cargo" id="Menores a cargo">
+                        <option value="0" selected>SI</option>
+                        <option value="1">NO</option>
+                    </select>
+                    <div>
+                        <p>Ingrese la cantidad de menores a cargo que tiene la persona</p>
+                        <input type="text" name="menores" id="menores" placeholder="Menores a cargo">
+                    </div>
+        
+
+                    <div class="terminos">
+                        <input class="check" type="checkbox" id="terminos">
+                        <label class="textoCheck" for="terminos">Acepta términos y condiciones</label>
+                    </div>
+
+                    <div>
+                        <input class="boton" type="submit" value="Registrarse" id="registrarse">
+                    </div>
+                    <div>
+                        <a class="ayuda" href="./inicio_sesion.html">Ya sos colaborador?</a>
+                    </div>
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+               
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+</body>
+
+</html>

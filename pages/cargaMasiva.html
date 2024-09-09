@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet"href= "../css/cargaMasiva.css">
+
+    <title>Carga CSV| Viandas Solidarias</title>
+</head>
+
+<body class="body Interno centrado">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo de Viandas Solidarias" loading="lazy" width="100">
+            </a>
+            <ul>
+                <li>
+                    <li><a href="crearReporte.html">Reportes</a></li>
+                   
+                    <li><a href="puntos.html">Puntos</a></li>
+                    <li><a href="alertasHeladera.html">Alertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Alerta">
+            <div class="cargaMasiva">
+                <h2>Carga de CSV de Colaboraciones</h2>
+
+                <p>Selecciona un archivo csv para cargar :</p>
+
+            </div>
+            <div class="cargarDatos">
+                <div id="cargaMasivaDiv" class="container">
+                    <input type="file" id="csvfile" accept=".csv" style="display: none;">
+                    <label for="csvfile" class="formatoCargaMasiva">
+                        <img src="../assets/img/cargaCSV.png" alt="CSV Icon" id="csv-icon">
+                        <span id="csv-filename">ejemplo.csv</span>
+                    </label>
+                    <div id="error-message">Por favor, selecciona un archivo CSV.</div>
+                </div>
+                <script src="cargaMasiva.js"></script> <!-- Asegúrate de que este enlace sea correcto -->
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+        <a href="#main">
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+
+</body>
+
+</html>
